@@ -9,11 +9,19 @@
     <style>
         body {
             font-size: 20px;
-            padding: 60px;
+            padding: 20px;
+        }
+
+        img {
+            width: 200px;
+            height: auto;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
-
+@for ($i = 1; $i < 31; $i++)
+    <img src="{{url('/' . $i .'/image.jpg')}}" alt="Image {{$i}}">
+@endfor
 </body>
 </html>
